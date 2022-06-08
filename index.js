@@ -15,11 +15,11 @@ app.use((req, res, next) => {
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-    res.json({ greeting: "Hello World" });
+    res.send("Hello world");
 });
 
 app.get("/hello_world", (req, res) => {
-    res.send("Hello this is your first Hello World");
+    res.json({ greeting: "Hello World" });
 });
 
 app.listen(PORT, () => {

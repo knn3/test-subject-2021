@@ -1,12 +1,12 @@
 function LandingPage() {
 
-    const CallAPI = () => {
+    const CallAPI = async () => {
         console.log("You are running");
-        const res = fetch(
+        const res = await fetch(
             "https://test-subject-2021.herokuapp.com/hello_world"
-        ).then((response) => response.json());
-
-        console.log(res);
+        );
+        const msg = JSON.stringify(res);
+        console.log(msg);
     }
 
     return (
