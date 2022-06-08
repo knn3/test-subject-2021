@@ -1,0 +1,6 @@
+{
+    "name": "Test-Subject-2021",
+    "description": "Tesing to deploy a backend server",
+    "repository": "https://github.com/qvd808/test-subject-2021",
+    "keywords":["node", "express"]
+}
