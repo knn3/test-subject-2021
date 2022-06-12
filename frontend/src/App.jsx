@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import {Routes, Route} from "react-router-dom" 
 import LoginButton from './components/LoginButton'
 import LogoutButton from './components/LogoutButton'
+import Profile from './components/Profile'
 function App() {
 
   return (
@@ -21,7 +22,8 @@ function App() {
     // </div>
     <>
       <LoginButton />
-    <LogoutButton/>
+      <LogoutButton />
+      <Profile/>
     </>
   )
     
