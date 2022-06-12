@@ -21,6 +21,6 @@ const RentButton = () => {
           </button>
     )
   )
-}
+}//test
 
 export default RentButton
