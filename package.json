@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test and deploy a website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,17 @@
     "pg": "^8.7.3",
     "pool": "^0.4.1",
     "vite": "^2.9.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qvd808/test-subject-2021.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/qvd808/test-subject-2021/issues"
+  },
+  "homepage": "https://github.com/qvd808/test-subject-2021#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
