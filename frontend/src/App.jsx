@@ -6,6 +6,7 @@ import {Routes, Route} from "react-router-dom"
 import LoginButton from './components/LoginButton'
 import LogoutButton from './components/LogoutButton'
 import Profile from './components/Profile'
+import RentButton from './components/RentButton'
 function App() {
 
   return (
@@ -23,7 +24,7 @@ function App() {
     <>
       <LoginButton />
       <LogoutButton />
-      <Profile/>
+      <RentButton/>
     </>
   )
     
