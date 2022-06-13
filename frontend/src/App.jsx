@@ -1,22 +1,18 @@
 import './App.css'
 import LandingPage from './components/MainComponent'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Login from './components/Login';
 
 function App() {
 
   return (
       <div className="App">
-          {/* <button>Hello World</button> */}
+          <Link to="/login"> Login</Link>
+          <Link to="/"> Home</Link>
+
           <Routes>
-              <Route
-                  path="test-subject-2021/"
-                  element={<LandingPage />}
-              ></Route>
-              <Route
-                  path="test-subject-2021/login"
-                  element={<Login />}
-              ></Route>
+              <Route path="/" element={<LandingPage />}></Route>
+              <Route path="/login" element={<Login />}></Route>
           </Routes>
       </div>
   );
