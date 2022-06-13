@@ -22,13 +22,10 @@ CREATE TABLE userProductId(
 
 CREATE TABLE users(
     id SERIAL PRIMARY KEY,
-    fullname VARCHAR(50),
-    username VARCHAR(50),
-    password VARCHAR(64), --https://stackoverflow.com/questions/247304/what-data-type-to-use-for-hashed-password-field-and-what-length SHA-256 generate CHAR(64)
-    yearofbirth VARCHAR(20),
-    phone VARCHAR(20),
-    email VARCHAR(50),
-    addressUser VARCHAR(100),
-    bio text,
-    avatar VARCHAR(200)
+    username TEXT UNIQUE,
+    hashed_password BYTEA,
+    salt BYTEA,
+    name TEXT,
+    email TEXT UNIQUE,
+    email_verified INTEGER
 );

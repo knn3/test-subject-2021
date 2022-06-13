@@ -11,6 +11,14 @@ function Login() {
         setUsername(e.target.value);
     };
 
+    const submitButton = async (e) => {
+        const res = await fetch(
+            `https://test-subject-2021.herokuapp.com/login?username=${username}&password=${password}`
+        ).then((response) => {
+            return response.json();
+        });
+    }
+
     return (
         <div>
             <form>
@@ -33,7 +41,7 @@ function Login() {
                         required
                     />
                     <br />
-                    <button type="submit">Login</button>
+                    <button type = "submit">Login</button>
                 </div>
             </form>
         </div>

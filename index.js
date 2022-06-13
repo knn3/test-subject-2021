@@ -5,7 +5,9 @@ const pool = require("./database/db");
 
 //Method
 const ItemMethod = require("./SQLmethod/Item");
+const UserMethod = require("./SQLmethod/User");
 const itemMethod = new ItemMethod(pool);
+const userMethod = new UserMethod(pool);
 
 // app.use(cors());
 
@@ -25,6 +27,10 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
     res.send("Hello world");
 });
+
+app.get("/login", (req, res) => {
+    userMethod.getUser(req, res);
+})
 
 app.get("/hello_world", (req, res) => {
     res.json({ greeting: "Hello World" });
